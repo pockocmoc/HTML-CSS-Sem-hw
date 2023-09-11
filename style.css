@@ -1,0 +1,380 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+
+.container {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 1600px;
+    height: 75px;
+    flex-shrink: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    padding-top: 18px;
+    padding-bottom: 19px;
+}
+
+.search-button {
+    padding-left: 41px;
+    padding-top: 28px;
+    padding-bottom: 20px;
+}
+
+.menu {
+    padding-left: 860px;
+    width: 160px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-search-container {
+    display: flex;
+    align-items: center;
+    gap: 41px;
+}
+
+.reactangle {
+    width: 1600px;
+
+}
+
+.top-content {
+    background-color: #F1E4E6;
+    display: flex;
+    align-items: center;
+    max-height: 800px;
+
+}
+
+.brand-content {
+    width: 377px;
+    height: 93px;
+    padding-left: 16px;
+    display: grid;
+    justify-content: start;
+}
+
+.vertical-line {
+    width: 12px;
+    height: 92px;
+    flex-shrink: 0;
+    background-color: #F16D7F;
+}
+
+
+.brand-content h4 {
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.brand-content h5 {
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+
+.offer-content {
+    width: 1600px;
+    padding-top: 65px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.reactangle-img-offer {
+    position: relative;
+}
+
+.filter-reactangle {
+    width: 360px;
+    height: 260px;
+    background: rgba(33, 22, 22, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.filter-react-4 {
+    width: 1140px;
+    height: 180px;
+    background: rgba(33, 22, 22, 0.70);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+h6 {
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+h7 {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-container {
+    width: 1600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.product {
+    width: 360px;
+    height: 581px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    background: #F8F8F8;
+}
+
+.card-prod-padding {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.product h3 {
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+}
+
+.product p {
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 16px;
+    padding-right: 16px;
+
+}
+
+.product span {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 16px;
+}
+
+h2 {
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 182px;
+    height: 36px;
+    padding-top: 96px;
+    padding-bottom: 6px;
+}
+
+
+.future-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 48px;
+}
+
+.future-container p {
+    width: 336px;
+    height: 17px;
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+
+.content-positon {
+    width: 360px;
+    height: 581px;
+
+}
+
+.card-list {
+    align-content: center;
+    width: 1140px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 30px;
+}
+
+.button-container {
+    margin-top: 48px;
+    margin-bottom: 60px;
+    border: 1px;
+    background: none;
+}
+
+.rectangle {
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    background-color: #FFFFFF;
+    border: 1px solid #FF6A6A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rectangle span {
+    font-size: 16px;
+    color: #FF6A6A;
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+
+    .header-content {
+        min-width: 768px;
+        height: 74px;
+    }
+
+    .menu {
+        padding-left: 424px;
+
+    }
+
+    .table-img-size {
+        inline-size: 386px;
+    }
+
+    .brand-content {
+        width: 284px;
+        height: 78px;
+    }
+
+    .brand-content h4 {
+        font-size: 44px;
+    }
+
+    .brand-content h5 {
+        font-size: 24px;
+
+    }
+
+    .vertical-line {
+        height: 74px;
+    }
+
+    .padding-image {
+        inline-size: 230px;
+    }
+
+    .filter-reactangle {
+        width: 230px;
+        height: 167px;
+    }
+
+    .padding-image-long {
+        width: 734px;
+    }
+
+    .filter-react-4 {
+        width: 734px;
+        height: 116px;
+    }
+
+    .offer-content {
+        gap: 20px;
+    }
+
+    h7 {
+        font-size: 18px;
+    }
+
+    .product-container {
+        width: 768px;
+    }
+
+    .card-list {
+        align-content: center;
+        width: 768px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        justify-items: center;
+        gap: 16px;
+    }
+
+}
