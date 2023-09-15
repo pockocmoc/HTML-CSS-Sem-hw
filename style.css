@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-BoldItalic';
     src: url('./fonts/Lato/Lato-BoldItalic.woff2') format('woff2');
     font-weight: bold;
     font-style: italic;
@@ -7,7 +7,7 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Light';
     src: url('./fonts/Lato/Lato-Light.woff2') format('woff2');
     font-weight: 300;
     font-style: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-BlackItalic';
     src: url('./fonts/Lato/Lato-BlackItalic.woff2') format('woff2');
     font-weight: 900;
     font-style: italic;
@@ -23,7 +23,7 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Bold';
     src: url('./fonts/Lato/Lato-Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
@@ -39,7 +39,7 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-LightItalic';
     src: url('./fonts/Lato/Lato-LightItalic.woff2') format('woff2');
     font-weight: 300;
     font-style: italic;
@@ -47,7 +47,7 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Regular';
     src: url('./fonts/Lato/Lato-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
@@ -63,7 +63,7 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Italic';
     src: url('./fonts/Lato/Lato-Italic.woff2') format('woff2');
     font-weight: normal;
     font-style: italic;
@@ -71,7 +71,7 @@
 }
 
 @font-face {
-    font-family: 'Lato';
+    font-family: 'Lato-Black';
     src: url('./fonts/Lato/Lato-Black.woff2') format('woff2');
     font-weight: 900;
     font-style: normal;
@@ -100,6 +100,7 @@ img {
     margin: 0 auto;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .header-content {
@@ -270,6 +271,97 @@ h7 {
     transform: translate(-50%, -50%);
 }
 
+.cards__container {
+    width: 1140px;
+    display: flex;
+
+
+}
+
+
+
+/* CSS */
+
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    background: #f8f8f8;
+
+}
+
+.item-img {
+    width: 360px;
+    height: 420px;
+    margin-bottom: 25px;
+}
+
+.item-img:hover .item-img__hover {
+    display: flex;
+}
+
+.item-img__hover {
+    background: rgba(58, 56, 56, 0.86);
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-img__hover-btn {
+    cursor: pointer;
+    background: transparent;
+    outline: none;
+    border: 1px solid #ffffff;
+    padding: 13px 16px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #ffffff;
+}
+
+.item-img__hover-btn::before {
+    content: url(img/btn-cart.svg);
+    width: 26px;
+    height: 24px;
+}
+
+.item-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 19px 16px;
+}
+
+.item-title {
+    font-family: 'Lato-Light';
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 16px;
+}
+
+.item-text {
+    font-weight: 300;
+    font-size: 14px;
+    font-family: Lato-Light;
+    line-height: 17px;
+    color: #5d5d5d;
+    margin-bottom: 16px;
+    max-width: 314px;
+}
+
+.item-price {
+    font-size: 16px;
+    line-height: 19px;
+    font-family: Lato-Regular;
+    color: #f16d7f;
+}
+
 .product-container {
     width: 1600px;
     margin: 0 auto;
@@ -368,6 +460,13 @@ h2 {
     width: 360px;
     height: 581px;
 
+}
+
+.card-list__container {
+    width: 1140px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .card-list {
@@ -580,12 +679,13 @@ h2 {
 .product_add {
     width: 360px;
     height: 420px;
+    position: relative;
 }
 
 .product_add:hover {
-    fill: #F16D7F;
-    background: #E05C6E;
+    content: #F16D7F;
     position: absolute;
+    /* z-index: 1; */
 }
 
 .button-container:hover {
@@ -704,6 +804,10 @@ h2 {
         gap: 16px;
     }
 
+    .card-list__container {
+        gap: 16px;
+    }
+
     .aside-container {
         height: 610px;
         flex-direction: column;
@@ -730,7 +834,6 @@ h2 {
 @media (max-width: 767px) {
     .container {
         width: 375px;
-        /* max-width: 100%; */
     }
 
     .header-content {
@@ -773,7 +876,6 @@ h2 {
 
     .top-content {
         max-width: 100%;
-        /* width: 375px; */
         height: 363px;
 
     }
@@ -829,6 +931,11 @@ h2 {
         font-size: 24px;
     }
 
+
+    .card-list__container {
+        gap: 15px;
+    }
+
     .product-container {
         width: 375px;
         padding-top: 40px;
@@ -841,7 +948,7 @@ h2 {
     }
 
     .future-container {
-        padding-bottom: 30px;
+        padding-bottom: 65px;
     }
 
     .card-list {
