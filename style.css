@@ -765,9 +765,8 @@ h2 {
 }
 
 .product_add:hover {
-    content: #F16D7F;
+    color: #F16D7F;
     position: absolute;
-    /* z-index: 1; */
 }
 
 .button-container:hover {
