@@ -84,6 +84,11 @@
     text-decoration: none;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
     scroll-behavior: smooth;
 }
@@ -139,6 +144,80 @@ img {
     gap: 41px;
 }
 
+
+.hidden {
+    display: none;
+}
+
+.menu-active {
+    position: absolute;
+    /* left: 0;
+    top: 0; */
+    width: 1600px;
+    background: rgba(0, 0, 0, 0.5);
+    height: 765px;
+    z-index: 3;
+}
+
+.manu-active__all {
+    width: 232px;
+    height: inherit;
+    background: white;
+    margin-left: auto;
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21);
+    /* padding: 37px 24px; */
+    box-sizing: border-box;
+    position: relative;
+    min-height: inherit;
+    overflow: auto;
+
+}
+
+.menu-close {
+    cursor: pointer;
+    position: absolute;
+    right: 16px;
+}
+
+.menu-headding {
+    color: #000;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding-top: 32px;
+    padding-left: 33px;
+    padding-bottom: 24px;
+}
+
+.menu-text {
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-left: 32px;
+    padding-bottom: 12px;
+
+}
+
+
+.menu-list {
+    color: #6F6E6E;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 55px;
+    padding-bottom: 11px;
+}
+
 .reactangle {
     width: 1600px;
 
@@ -149,7 +228,8 @@ img {
     display: flex;
     align-items: center;
     max-height: 800px;
-
+    display: flex;
+    justify-content: flex-start;
 }
 
 
@@ -174,6 +254,8 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+
 
 .brand-content {
     width: 377px;
@@ -746,6 +828,11 @@ h2 {
         inline-size: 386px;
     }
 
+    .menu-active {
+      width: 768px;
+      height: 368px;
+    }
+
     .brand-content {
         width: 284px;
         height: 78px;
@@ -858,6 +945,11 @@ h2 {
         width: unset;
         height: unset;
     }
+
+    .menu-active {
+        width: 375px;
+        height: 363px;
+      }
 
     .menu::before {
         display: none;
